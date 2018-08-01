@@ -1,0 +1,22 @@
+{
+  "name": "rand_name",
+  "version": "1.0.0",
+  "description": "rand_name",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jecshcier/rand_name.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jecshcier/rand_name/issues"
+  },
+  "homepage": "https://github.com/jecshcier/rand_name#readme",
+  "dependencies": {
+    "fs-extra": "^7.0.0"
+  }
+}
