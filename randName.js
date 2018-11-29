@@ -1,5 +1,5 @@
 const data = require('./data')
-	// options:{familyName,nameLen}
+// options:{familyName,nameLen}
 const randName = (num, options) => {
 	let nameArr = []
 	for (let i = 0; i < num; i++) {
@@ -15,7 +15,9 @@ const randName = (num, options) => {
 
 		// 若有姓名长度限制
 		if (options.nameLen) {
-			nameType = options.nameLen - 2
+			if (options.familyName.length < options.nameLen) {
+				nameType = options.nameLen - options.familyName.length - 1
+			}
 		} else {
 			let flag = Math.floor(Math.random() * 10)
 			if (flag > 7) {
